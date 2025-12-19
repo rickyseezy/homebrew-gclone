@@ -5,20 +5,20 @@
 class Gclone < Formula
   desc "Clone git repositories using SSH profile aliases."
   homepage "https://github.com/rickyseezy/gclone"
-  version "0.1.4"
+  version "0.1.5"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.4/gclone_0.1.4_darwin_amd64.tar.gz"
-      sha256 "8b57648ef255579d12463cf00f74df0ea88c7e05fe6ee59df6f8fcf63a96bf3f"
+      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.5/gclone_0.1.5_darwin_amd64.tar.gz"
+      sha256 "f92f4e9e48b84cd1624e81c126bd1bb76824c3c0edb9695f9bd34c6420a470f4"
 
       def install
         bin.install "gclone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.4/gclone_0.1.4_darwin_arm64.tar.gz"
-      sha256 "b3773e942aa16166133336c9d0d6c034c6e6fdf70641a9daae4155dbba0c149f"
+      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.5/gclone_0.1.5_darwin_arm64.tar.gz"
+      sha256 "ff9c223d3cfda40a5127e47c157dd7aa65c7d056fe86a026a6a14d5dc5307277"
 
       def install
         bin.install "gclone"
@@ -28,15 +28,15 @@ class Gclone < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.4/gclone_0.1.4_linux_amd64.tar.gz"
-      sha256 "301774f2639cf4c91837f81e0d1f824bda16bc9dc5e28efe64dd9bd0f320fec2"
+      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.5/gclone_0.1.5_linux_amd64.tar.gz"
+      sha256 "f8148be348dd45337c58fbb7b4b45f6bd6d60fc076004fc0e3f7f1e891779f5f"
       def install
         bin.install "gclone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.4/gclone_0.1.4_linux_arm64.tar.gz"
-      sha256 "9486b53a01ab1af77bf85ddd17668ba3cbddee254159f2035406d5ec4a629ef9"
+      url "https://github.com/rickyseezy/gclone/releases/download/v0.1.5/gclone_0.1.5_linux_arm64.tar.gz"
+      sha256 "85525f831284093194dabdfa14a81f5ba2f080a25effdc67468792b3d2b40ea6"
       def install
         bin.install "gclone"
       end
